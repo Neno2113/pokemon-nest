@@ -48,6 +48,7 @@ export class PokemonService {
     }
 
     //Term
+    console.log(pokemon);
     if( !pokemon ){
       pokemon = await this.pokemonModel.findOne({ name: term.toLocaleLowerCase()} )
     }
